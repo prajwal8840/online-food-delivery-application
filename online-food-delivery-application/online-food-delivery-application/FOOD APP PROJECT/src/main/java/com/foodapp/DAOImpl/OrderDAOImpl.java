@@ -44,7 +44,7 @@ public class OrderDAOImpl implements OrderDAO{
 			ResultSet id = prepareStatement.getGeneratedKeys();
 			
 			while(id.next()) {
-				orderId = id.getInt("1");
+				orderId = id.getInt(1); //orderId = id.getInt("1");
 			}
 			
 			System.out.println(i);
